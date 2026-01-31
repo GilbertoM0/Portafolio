@@ -1,3 +1,8 @@
+// ============================================
+// Gilberto Macías Ochoa - Portfolio Constants
+// Ingeniero en Sistemas Computacionales / Full Stack Developer
+// ============================================
+
 const navLinks = [
   {
     name: "Work",
@@ -15,6 +20,10 @@ const navLinks = [
     name: "Testimonials",
     link: "#testimonials",
   },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
 ];
 
 const words = [
@@ -29,10 +38,30 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 3, suffix: "+", label: "Years of Experience" },
+  { value: 10, suffix: "+", label: "Satisfied Clients" },
+  { value: 15, suffix: "+", label: "Completed Projects" },
+  { value: 95, suffix: "%", label: "Client Retention Rate" },
+];
+
+// Services offered by Gilberto Macías Ochoa
+const services = [
+  {
+    title: "Full Stack Developer",
+    description: "Django, NestJS, HTML, CSS, JavaScript (Angular)",
+  },
+  {
+    title: "Android Developer",
+    description: "Kotlin & Jetpack Compose",
+  },
+  {
+    title: "Cybersecurity Auditor",
+    description: "Kali Linux, Penetration Testing, Security Analysis",
+  },
+  {
+    title: "Investment Analyst",
+    description: "Crypto (UNI/Uniswap), Data Analysis",
+  },
 ];
 
 const logoIconsList = [
@@ -91,38 +120,38 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
     name: "Python Developer",
     imgPath: "/images/logos/python.svg",
+  },
+  {
+    name: "React Developer",
+    imgPath: "/images/logos/react.png",
   },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "3D Developer",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Version Control",
     imgPath: "/images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
     name: "Python Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "React Developer",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
     rotation: [0, 0, 0],
   },
   {
@@ -132,13 +161,13 @@ const techStackIcons = [
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "3D Developer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Version Control",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,39 +176,45 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Gilberto developed a custom e-commerce platform that perfectly showcases our jewelry collection. His attention to detail and understanding of our brand made all the difference.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Freelance Developer - Joyería Elvia",
+    date: "E-commerce Project",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Designed and developed a custom e-commerce platform for jewelry showcase.",
+      "Implemented secure payment gateways and shopping cart functionality.",
+      "Created an intuitive admin panel for inventory management.",
+      "Optimized the website for SEO and mobile responsiveness.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "The web platform Gilberto created for TECNM's Prenacional event allowed us to track sports events in real-time. His technical expertise was invaluable.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Web Developer - Prenacional TECNM",
+    date: "Sports Event Platform",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a real-time tracking system for sports events.",
+      "Built a responsive web application for live event updates.",
+      "Implemented database management for athlete and event data.",
+      "Created user-friendly interfaces for event organizers and spectators.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Gilberto created an exceptional mobile app for Casa Gamu that streamlined our order management process. He also developed websites for ALCATE and Bejam businesses.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Mobile & Web Developer",
+    date: "Multiple Projects",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Developed a mobile ordering app for Casa Gamu using Kotlin and Jetpack Compose.",
+      "Created informative website for ALCATE (mango chipotle sauce business).",
+      "Built professional website for Bejam (pork distribution business).",
+      "Implemented responsive design and cross-browser compatibility across all projects.",
     ],
   },
 ];
@@ -199,48 +234,61 @@ const expLogos = [
   },
 ];
 
+// Projects showcase
+const projects = [
+  {
+    name: "E-commerce Joyería Elvia",
+    description:
+      "Custom e-commerce platform for jewelry showcase with secure payment integration and inventory management.",
+    imgPath: "/images/project1.png",
+    tags: ["Django", "Python", "E-commerce", "Responsive Design"],
+    link: "#",
+  },
+  {
+    name: "Web Prenacional TECNM",
+    description:
+      "Real-time sports event tracking platform for TECNM's Prenacional event with live updates and athlete management.",
+    imgPath: "/images/project2.png",
+    tags: ["Angular", "TypeScript", "Real-time", "Sports"],
+    link: "#",
+  },
+];
+
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Joyería Elvia",
+    mentions: "@joyeriaelvia",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Gilberto created an amazing e-commerce platform for our jewelry business. His understanding of our needs and technical expertise resulted in a beautiful, functional website that has increased our online sales.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "TECNM Prenacional",
+    mentions: "@tecnmprenacional",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "The real-time tracking system Gilberto developed for our sports events was exactly what we needed. His professionalism and ability to deliver on time made the project a success.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Casa Gamu",
+    mentions: "@casagamu",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "The mobile app Gilberto created transformed our business operations. The order management system is intuitive and our customers love the Uber Eats-like experience.",
+    imgPath: "/images/client3.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "ALCATE",
+    mentions: "@alcate",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Gilberto designed a website that perfectly captures our brand identity for our mango chipotle sauce business. His attention to detail and creativity exceeded our expectations.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Bejam",
+    mentions: "@bejam",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Professional and reliable, Gilberto delivered a fantastic website for our pork distribution business. The site is modern, easy to navigate, and represents our company well.",
+    imgPath: "/images/client5.png",
   },
 ];
 
@@ -275,4 +323,6 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  services,
+  projects,
 };
