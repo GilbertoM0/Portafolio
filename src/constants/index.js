@@ -206,7 +206,7 @@ const expCards = [
   {
     review:
       "Gilberto created an exceptional mobile app for Casa Gamu that streamlined our order management process. He also developed websites for ALCATE and Bejam businesses.",
-    imgPath: "/images/exp3.png",
+    imgPath: "/images/logo3.png",
     logoPath: "/images/logo3.png",
     title: "Mobile & Web Developer",
     date: "Multiple Projects",
@@ -226,7 +226,7 @@ const expLogos = [
   },
   {
     name: "logo2",
-    imgPath: "/images/logo2.png",
+    imgPath: "/images/logo2.webp",
   },
   {
     name: "logo3",
