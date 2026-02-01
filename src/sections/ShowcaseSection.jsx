@@ -7,9 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AppShowcase = () => {
   const sectionRef = useRef(null);
-  const rydeRef = useRef(null);
-  const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
+  const tecnmRef = useRef(null);
+  const elviaRef = useRef(null);
+  const alcateRef = useRef(null);
+  const bejamRef = useRef(null);
 
   useGSAP(() => {
     // Animation for the main section
@@ -20,7 +21,12 @@ const AppShowcase = () => {
     );
 
     // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [
+      tecnmRef.current,
+      elviaRef.current,
+      alcateRef.current,
+      bejamRef.current,
+    ];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -47,39 +53,72 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+          {/* Main Project - TECNM Prenacional */}
+          <a
+            href="https://prenacional-itj.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ref={tecnmRef}
+            className="first-project-wrapper cursor-pointer"
+          >
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/project1.png" alt="TECNM Prenacional" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Real-Time Tracking System for Sports Events -
+                TECNM Prenacional
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Web platform developed with HTML, CSS, TypeScript and NestJS for live
+                tracking of sports events, athlete management, and real-time
+                results updates.
               </p>
             </div>
-          </div>
+          </a>
 
           <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
+            {/* Joyería Elvia */}
+            <a
+              href="https://espejito-espejito.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project cursor-pointer"
+              ref={elviaRef}
+            >
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+                <img src="/images/project2.png" alt="Joyería Elvia E-commerce" />
               </div>
-              <h2>The Library Management Platform</h2>
-            </div>
+              <h2>Joyería Elvia - E-commerce Platform</h2>
+            </a>
 
-            <div className="project" ref={ycDirectoryRef}>
+            {/* ALCATE */}
+            <a
+              href="https://gilbertom0.github.io/sitiowebALCATE/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project cursor-pointer"
+              ref={alcateRef}
+            >
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/project3.png" alt="ALCATE Website" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
-            </div>
+              <h2>ALCATE - Mango Chipotle Sauce Website</h2>
+            </a>
+
+            {/* Bejam */}
+            <a
+              href="https://bejam.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project cursor-pointer"
+              ref={bejamRef}
+            >
+              <div className="image-wrapper bg-[#E7F0FF]">
+                <img src="/images/project4.png" alt="Bejam Website" />
+              </div>
+              <h2>Bejam - Pork Distribution Website</h2>
+            </a>
           </div>
         </div>
       </div>
