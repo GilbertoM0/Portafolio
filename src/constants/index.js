@@ -38,9 +38,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 3, suffix: "+", label: "Years of Experience" },
-  { value: 10, suffix: "+", label: "Satisfied Clients" },
-  { value: 15, suffix: "+", label: "Completed Projects" },
+  { value: 1, suffix: "+", label: "Years of Experience" },
+  { value: 4, suffix: "+", label: "Satisfied Clients" },
+  { value: 3, suffix: "+", label: "Completed Projects" },
   { value: 95, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -257,37 +257,37 @@ const projects = [
 const testimonials = [
   {
     name: "Joyería Elvia",
-    mentions: "@joyeriaelvia",
+    mentions: "@espejito.espejitosanmac",
     review:
-      "Gilberto created an amazing e-commerce platform for our jewelry business. His understanding of our needs and technical expertise resulted in a beautiful, functional website that has increased our online sales.",
+      "Gilberto creó una plataforma de e-commerce increíble para nuestro negocio de joyería. Su comprensión de nuestras necesidades y su experiencia técnica resultaron en un sitio web hermoso y funcional que ha aumentado nuestras ventas en línea.",
     imgPath: "/images/client1.png",
   },
   {
     name: "TECNM Prenacional",
-    mentions: "@tecnmprenacional",
+    mentions: "@tecnmjiquilpan",
     review:
-      "The real-time tracking system Gilberto developed for our sports events was exactly what we needed. His professionalism and ability to deliver on time made the project a success.",
+      "El sistema de seguimiento en tiempo real que Gilberto desarrolló para nuestros eventos deportivos fue exactamente lo que necesitábamos. Su profesionalismo y capacidad para entregar a tiempo hicieron que el proyecto fuera un éxito.",
     imgPath: "/images/client2.png",
   },
   {
     name: "Casa Gamu",
     mentions: "@casagamu",
     review:
-      "The mobile app Gilberto created transformed our business operations. The order management system is intuitive and our customers love the Uber Eats-like experience.",
+      "La aplicación móvil que Gilberto creó transformó nuestras operaciones comerciales. El sistema de gestión de pedidos es intuitivo y a nuestros clientes les encanta la experiencia similar a Uber Eats.",
     imgPath: "/images/client3.png",
   },
   {
     name: "ALCATE",
-    mentions: "@alcate",
+    mentions: "@salsaalcate",
     review:
-      "Gilberto designed a website that perfectly captures our brand identity for our mango chipotle sauce business. His attention to detail and creativity exceeded our expectations.",
+      "Gilberto diseñó un sitio web que captura perfectamente la identidad de nuestra marca para nuestro negocio de salsa de mango chipotle. Su atención al detalle y creatividad superaron nuestras expectativas.",
     imgPath: "/images/client4.png",
   },
   {
     name: "Bejam",
-    mentions: "@bejam",
+    mentions: "@bejamhealthy",
     review:
-      "Professional and reliable, Gilberto delivered a fantastic website for our pork distribution business. The site is modern, easy to navigate, and represents our company well.",
+      "Profesional y confiable, Gilberto entregó un sitio web fantástico para nuestro negocio de distribución de cerdo. El sitio es moderno, fácil de navegar.",
     imgPath: "/images/client5.png",
   },
 ];
@@ -300,10 +300,6 @@ const socialImgs = [
   {
     name: "fb",
     imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
