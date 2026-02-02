@@ -101,7 +101,7 @@ const AppShowcase = () => {
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img src="/images/project2.png" alt="Joyería Espejito Espejito E-commerce" />
               </div>
-              <h2>Joyería Espejito Espejito - E-commerce Platform</h2>
+              <h2>Joyería Espejito Espejito - E-commerce Platform (In progress)</h2>
             </a>
 
             {/* ALCATE */}
