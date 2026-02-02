@@ -213,8 +213,6 @@ const expCards = [
     date: "Multiple Projects",
     responsibilities: [
       "Developed a mobile ordering app for Casa Gamu using Kotlin and Jetpack Compose.",
-      "Created informative website for ALCATE (mango chipotle sauce business).",
-      "Built professional website for Bejam (pork distribution business).",
       "Implemented responsive design and cross-browser compatibility across all projects.",
     ],
   },
