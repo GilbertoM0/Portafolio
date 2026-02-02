@@ -180,7 +180,7 @@ const expCards = [
       "Gilberto developed a custom e-commerce platform that perfectly showcases our jewelry collection. His attention to detail and understanding of our brand made all the difference.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Freelance Developer - Joyería Elvia",
+    title: "Freelance Developer - Joyería Espejito Espejito",
     date: "E-commerce Project",
     responsibilities: [
       "Designed and developed a custom e-commerce platform for jewelry showcase.",
@@ -237,7 +237,7 @@ const expLogos = [
 // Projects showcase
 const projects = [
   {
-    name: "E-commerce Joyería Elvia",
+    name: "E-commerce Joyería Espejito Espejito",
     description:
       "Custom e-commerce platform for jewelry showcase with secure payment integration and inventory management.",
     imgPath: "/images/project1.png",
@@ -256,7 +256,7 @@ const projects = [
 
 const testimonials = [
   {
-    name: "Joyería Elvia",
+    name: "Joyería Espejito Espejito",
     mentions: "@espejito.espejitosanmac",
     review:
       "Gilberto creó una plataforma de e-commerce increíble para nuestro negocio de joyería. Su comprensión de nuestras necesidades y su experiencia técnica resultaron en un sitio web hermoso y funcional que ha aumentado nuestras ventas en línea.",
@@ -273,7 +273,7 @@ const testimonials = [
     name: "Casa Gamu",
     mentions: "@casagamu",
     review:
-      "La aplicación móvil que Gilberto creó transformó nuestras operaciones comerciales. El sistema de gestión de pedidos es intuitivo y a nuestros clientes les encanta la experiencia similar a Uber Eats.",
+      "La aplicación móvil que Gilberto creó transformó nuestras operaciones comerciales. El sistema de gestión de pedidos es intuitivo y a nuestros clientes les encanta la experiencia.",
     imgPath: "/images/client3.png",
   },
   {
