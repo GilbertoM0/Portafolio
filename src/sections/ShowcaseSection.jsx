@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -11,6 +11,17 @@ const AppShowcase = () => {
   const elviaRef = useRef(null);
   const alcateRef = useRef(null);
   const bejamRef = useRef(null);
+  const gamuRef = useRef(null);
+
+  // Gallery state for Casa Gamu
+  const gamuImages = [
+    { src: "/images/casa_gamu/CasaGamu.png", alt: "Casa Gamu" },
+    { src: "/images/casa_gamu/HomeView.png", alt: "Home" },
+    { src: "/images/casa_gamu/Order.png", alt: "Order" },
+    { src: "/images/casa_gamu/Favorites.png", alt: "Favorites" },
+    { src: "/images/casa_gamu/Settings.png", alt: "Settings" },
+  ];
+  const [selectedGamuImage, setSelectedGamuImage] = useState(0);
 
   useGSAP(() => {
     // Animation for the main section
@@ -26,6 +37,7 @@ const AppShowcase = () => {
       elviaRef.current,
       alcateRef.current,
       bejamRef.current,
+      gamuRef.current,
     ];
 
     cards.forEach((card, index) => {
@@ -78,7 +90,7 @@ const AppShowcase = () => {
           </a>
 
           <div className="project-list-wrapper overflow-hidden">
-            {/* Joyería Elvia */}
+            {/* Joyería Espejito Espejito */}
             <a
               href="https://espejito-espejito.vercel.app/"
               target="_blank"
@@ -87,9 +99,9 @@ const AppShowcase = () => {
               ref={elviaRef}
             >
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img src="/images/project2.png" alt="Joyería Elvia E-commerce" />
+                <img src="/images/project2.png" alt="Joyería Espejito Espejito E-commerce" />
               </div>
-              <h2>Joyería Elvia - E-commerce Platform</h2>
+              <h2>Joyería Espejito Espejito - E-commerce Platform</h2>
             </a>
 
             {/* ALCATE */}
@@ -119,6 +131,36 @@ const AppShowcase = () => {
               </div>
               <h2>Bejam - Pork Distribution Website</h2>
             </a>
+
+            {/* Casa Gamu */}
+            <div className="project" ref={gamuRef}>
+              <div className="image-wrapper bg-[#FFF5E6]">
+                <img 
+                  src={gamuImages[selectedGamuImage].src} 
+                  alt={gamuImages[selectedGamuImage].alt} 
+                  className="transition-all duration-300"
+                />
+              </div>
+              <h2>Casa Gamu - Mobile Ordering App</h2>
+              <p className="text-white-50 text-sm mt-2">
+                Android app built with Kotlin & Jetpack Compose, PostgreSQL database, and Django backend for seamless food ordering experience.
+              </p>
+              <div className="flex gap-2 mt-3 flex-wrap">
+                {gamuImages.map((image, index) => (
+                  <img 
+                    key={index}
+                    src={image.src} 
+                    alt={image.alt} 
+                    className={`w-16 h-16 rounded-lg object-cover cursor-pointer transition-all duration-300 ${
+                      selectedGamuImage === index 
+                        ? 'ring-2 ring-blue-500 scale-105' 
+                        : 'opacity-70 hover:opacity-100 hover:scale-105'
+                    }`}
+                    onClick={() => setSelectedGamuImage(index)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
