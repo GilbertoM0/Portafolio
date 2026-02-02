@@ -294,17 +294,21 @@ const testimonials = [
 
 const socialImgs = [
   {
+    name: "linkedin",
+    imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/gilberto-macias-03889927a/",
+  },
+  {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/gilmacias10/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
-  },
+    link: "https://www.facebook.com/Dolextron.Gil.Macias/",
+  }
+  
 ];
 
 export {
