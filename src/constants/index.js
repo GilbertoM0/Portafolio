@@ -178,6 +178,20 @@ const techStackIcons = [
 const expCards = [
   {
     review:
+      "Play Quiniela MX is a full-featured mobile app for sports betting and prediction games. I developed the entire solution from scratch, delivering a secure and scalable platform.",
+    imgPath: "/images/play_quiniela/icon.png",
+    logoPath: "/images/play_quiniela/icon.png",
+    title: "Mobile App - Play Quiniela MX",
+    date: "Full Stack Project",
+    responsibilities: [
+      "Built the frontend with Angular and Capacitor for cross-platform mobile deployment.",
+      "Developed the backend API with NestJS, ensuring high performance and reliability.",
+      "Designed and managed the PostgreSQL database for user data and betting records.",
+      "Implemented security best practices including authentication, encryption, and anti-fraud measures.",
+    ],
+  },
+  {
+    review:
       "Gilberto developed a custom e-commerce platform that perfectly showcases our jewelry collection. His attention to detail and understanding of our brand made all the difference.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
@@ -220,6 +234,10 @@ const expCards = [
 
 const expLogos = [
   {
+    name: "quiniela",
+    imgPath: "/images/play_quiniela/icon.png",
+  },
+  {
     name: "logo1",
     imgPath: "/images/logo1.png",
   },
@@ -247,7 +265,7 @@ const projects = [
     name: "Web Prenacional TECNM",
     description:
       "Real-time sports event tracking platform for TECNM's Prenacional event with live updates and athlete management.",
-    imgPath: "/images/project2.png",
+    imgPath: "/images/project1.png",
     tags: ["Angular", "TypeScript", "Real-time", "Sports"],
     link: "#",
   },
@@ -255,7 +273,7 @@ const projects = [
     name: "E-commerce Joyería Espejito Espejito",
     description:
       "Custom e-commerce platform for jewelry showcase with secure payment integration and inventory management.",
-    imgPath: "/images/project1.png",
+    imgPath: "/images/project2.png",
     tags: ["Django", "Python", "E-commerce", "Responsive Design"],
     link: "#",
   },

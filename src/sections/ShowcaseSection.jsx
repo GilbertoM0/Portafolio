@@ -7,11 +7,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AppShowcase = () => {
   const sectionRef = useRef(null);
+  const quinielaRef = useRef(null);
   const tecnmRef = useRef(null);
   const elviaRef = useRef(null);
   const alcateRef = useRef(null);
   const bejamRef = useRef(null);
   const gamuRef = useRef(null);
+
+  // Gallery state for Play Quiniela
+  const quinielaImages = [
+    { src: "/images/play_quiniela/sesion.jpg", alt: "Sesión" },
+    { src: "/images/play_quiniela/IMG_3895.jpg", alt: "Play Quiniela 1" },
+    { src: "/images/play_quiniela/IMG_3896.jpg", alt: "Play Quiniela 2" },
+    { src: "/images/play_quiniela/IMG_3899.jpg", alt: "Play Quiniela 3" },
+    { src: "/images/play_quiniela/IMG_3900.jpg", alt: "Play Quiniela 4" },
+    { src: "/images/play_quiniela/IMG_3903.jpg", alt: "Play Quiniela 5" },
+  ];
+  const [selectedQuinielaImage, setSelectedQuinielaImage] = useState(0);
 
   // Gallery state for Casa Gamu
   const gamuImages = [
@@ -33,6 +45,7 @@ const AppShowcase = () => {
 
     // Animations for each app showcase
     const cards = [
+      quinielaRef.current,
       tecnmRef.current,
       elviaRef.current,
       alcateRef.current,
@@ -65,31 +78,83 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          {/* Main Project - TECNM Prenacional */}
-          <a
-            href="https://prenacional-itj.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ref={tecnmRef}
-            className="first-project-wrapper cursor-pointer"
+          {/* Main Project - Play Quiniela MX */}
+          <div
+            ref={quinielaRef}
+            className="first-project-wrapper"
           >
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="TECNM Prenacional" />
+            <div className="image-wrapper bg-[#1a1a2e] flex items-center justify-center p-4 md:p-8">
+              <img
+                src={quinielaImages[selectedQuinielaImage].src}
+                alt={quinielaImages[selectedQuinielaImage].alt}
+                className="transition-all duration-300 w-auto h-full max-w-full max-h-full object-contain rounded-xl relative"
+                style={{ position: "relative", inset: "auto" }}
+              />
             </div>
             <div className="text-content">
               <h2>
-                Real-Time Tracking System for Sports Events -
-                TECNM Prenacional
+                Play Quiniela MX - Mobile App
               </h2>
               <p className="text-white-50 md:text-xl">
-                Web platform developed with HTML, CSS, TypeScript and NestJS for live
-                tracking of sports events, athlete management, and real-time
-                results updates.
+                Android and OS app built with Angular, Capacitor, PostgreSQL database, and NestJS backend.
               </p>
+              <div className="flex gap-3 mt-4 flex-wrap">
+                <a
+                  href="https://apps.apple.com/mx/app/play-quiniela-mx/id6776365393?l=en-GB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-300 text-sm font-semibold"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                  </svg>
+                  App Store
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#3DDC84] text-black px-4 py-2 rounded-lg hover:bg-[#34c776] transition-colors duration-300 text-sm font-semibold"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 20.5L21 12L3 3.5v17zm2-3.4V6.9L16.3 12L5 17.1z"/>
+                  </svg>
+                  Google Play
+                </a>
+              </div>
+              <div className="flex gap-2 mt-4 flex-wrap">
+                {quinielaImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.src}
+                    alt={image.alt}
+                    className={`w-16 h-16 rounded-lg object-cover cursor-pointer transition-all duration-300 ${
+                      selectedQuinielaImage === index
+                        ? 'ring-2 ring-blue-500 scale-105'
+                        : 'opacity-70 hover:opacity-100 hover:scale-105'
+                    }`}
+                    onClick={() => setSelectedQuinielaImage(index)}
+                  />
+                ))}
+              </div>
             </div>
-          </a>
+          </div>
 
           <div className="project-list-wrapper overflow-hidden">
+            {/* TECNM Prenacional */}
+            <a
+              href="https://prenacional-itj.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project cursor-pointer"
+              ref={tecnmRef}
+            >
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <img src="/images/project1.png" alt="TECNM Prenacional" />
+              </div>
+              <h2>Real-Time Tracking System for Sports Events - TECNM Prenacional</h2>
+            </a>
+
             {/* Joyería Espejito Espejito */}
             <a
               href="https://espejito-espejito.vercel.app/"
