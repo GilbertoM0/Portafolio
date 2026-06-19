@@ -236,11 +236,11 @@ const expLogos = [
 // Projects showcase
 const projects = [
   {
-    name: "E-commerce Joyería Espejito Espejito",
+    name: "Play Quiniela MX - Mobile app",
     description:
-      "Custom e-commerce platform for jewelry showcase with secure payment integration and inventory management.",
+      "Android and OS app built with Angular, Capacitor, PostgreSQL database, and NestJS backend.",
     imgPath: "/images/project1.png",
-    tags: ["Django", "Python", "E-commerce", "Responsive Design"],
+    tags: ["Angular", "Capacitor", "PostgreSQL", "NestJS"],
     link: "#",
   },
   {
@@ -249,6 +249,14 @@ const projects = [
       "Real-time sports event tracking platform for TECNM's Prenacional event with live updates and athlete management.",
     imgPath: "/images/project2.png",
     tags: ["Angular", "TypeScript", "Real-time", "Sports"],
+    link: "#",
+  },
+  {
+    name: "E-commerce Joyería Espejito Espejito",
+    description:
+      "Custom e-commerce platform for jewelry showcase with secure payment integration and inventory management.",
+    imgPath: "/images/project1.png",
+    tags: ["Django", "Python", "E-commerce", "Responsive Design"],
     link: "#",
   },
 ];
