@@ -16,12 +16,17 @@ const AppShowcase = () => {
 
   // Gallery state for Play Quiniela
   const quinielaImages = [
-    { src: "/images/play_quiniela/sesion.jpg", alt: "Sesión" },
+    { src: "/images/play_quiniela/icon.png", alt: "Icon" },
     { src: "/images/play_quiniela/IMG_3895.jpg", alt: "Play Quiniela 1" },
     { src: "/images/play_quiniela/IMG_3896.jpg", alt: "Play Quiniela 2" },
-    { src: "/images/play_quiniela/IMG_3899.jpg", alt: "Play Quiniela 3" },
-    { src: "/images/play_quiniela/IMG_3900.jpg", alt: "Play Quiniela 4" },
-    { src: "/images/play_quiniela/IMG_3903.jpg", alt: "Play Quiniela 5" },
+    { src: "/images/play_quiniela/IMG_3897.jpg", alt: "Play Quiniela 3" },
+    { src: "/images/play_quiniela/IMG_3898.jpg", alt: "Play Quiniela 4" },
+    { src: "/images/play_quiniela/IMG_3899.jpg", alt: "Play Quiniela 5" },
+    { src: "/images/play_quiniela/IMG_3900.jpg", alt: "Play Quiniela 6" },
+    { src: "/images/play_quiniela/IMG_3901.jpg", alt: "Play Quiniela 7" },
+    { src: "/images/play_quiniela/IMG_3902.jpg", alt: "Play Quiniela 8" },
+    { src: "/images/play_quiniela/IMG_3903.jpg", alt: "Play Quiniela 9" },
+    { src: "/images/play_quiniela/sesion.jpg", alt: "Sesión" },
   ];
   const [selectedQuinielaImage, setSelectedQuinielaImage] = useState(0);
 
@@ -95,9 +100,6 @@ const AppShowcase = () => {
               <h2>
                 Play Quiniela MX - Mobile App
               </h2>
-              <p className="text-white-50 md:text-xl">
-                Android and OS app built with Angular, Capacitor, PostgreSQL database, and NestJS backend.
-              </p>
               <div className="flex gap-3 mt-4 flex-wrap">
                 <a
                   href="https://apps.apple.com/mx/app/play-quiniela-mx/id6776365393?l=en-GB"
@@ -122,6 +124,23 @@ const AppShowcase = () => {
                   Google Play
                 </a>
               </div>
+              <p className="text-white-50 md:text-lg leading-relaxed">
+                Play Quiniela is a hybrid mobile sports betting app built with <strong>Angular 19 + Ionic 8 + Capacitor</strong>, published on both Android and iOS. It follows <strong>Clean Architecture</strong> (Domain / Application / Infrastructure / Presentation) with <strong>NgRx</strong> for global state management (auth, pools, notifications, leaderboards, achievements, and chat).
+                <br /><br />
+                <strong>Authentication:</strong> Dual JWT token system (access + refresh) with automatic renewal, email/password login, and social login (Google, Apple). Protected by AuthGuard, NoAuthGuard, AdminGuard, and SuperAdminGuard based on user roles (user, admin, superadmin, reloader).
+                <br /><br />
+                <strong>Networking:</strong> HTTP interceptor injects Bearer token and handles 401 errors with automatic refresh. A ChunkErrorHandler reloads the app on lazy-loading failures.
+                <br /><br />
+                <strong>Payments:</strong> Stripe Checkout for balance top-ups (MXN $10–$10,000) and donations, with deep-link return to the app.
+                <br /><br />
+                <strong>Advertising:</strong> AdMob with adaptive banners and server-verified rewarded video ads (max 3/day) to earn extra entries.
+                <br /><br />
+                <strong>Push notifications</strong> via Firebase Cloud Messaging with an in-app notification center and deep linking. <strong>Real-time</strong> features powered by Socket.io.
+                <br /><br />
+                <strong>Dashboard</strong> with personal stats, achievements, and goals (first_participation, streak_master, accuracy_expert, etc.). Referral system with unique codes and QR sharing. Public/private pools with entry costs and limits, per-pool leaderboards, dark mode, and a full admin panel (user management, pool management, QR reloads, mass notifications, audit logs, and campaigns).
+                <br /><br />
+                Backend deployed on <strong>Railway</strong> following the same Clean Architecture principles.
+              </p>
               <div className="flex gap-2 mt-4 flex-wrap">
                 {quinielaImages.map((image, index) => (
                   <img
