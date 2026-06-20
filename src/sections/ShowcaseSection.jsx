@@ -124,6 +124,21 @@ const AppShowcase = () => {
                   Google Play
                 </a>
               </div>
+              <div className="flex gap-2 mt-4 flex-wrap">
+                {quinielaImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.src}
+                    alt={image.alt}
+                    className={`w-16 h-16 rounded-lg object-cover cursor-pointer transition-all duration-300 ${
+                      selectedQuinielaImage === index
+                        ? 'ring-2 ring-blue-500 scale-105'
+                        : 'opacity-70 hover:opacity-100 hover:scale-105'
+                    }`}
+                    onClick={() => setSelectedQuinielaImage(index)}
+                  />
+                ))}
+              </div>
               <p className="text-white-50 md:text-lg leading-relaxed">
                 Play Quiniela is a hybrid mobile sports betting app built with <strong>Angular 19 + Ionic 8 + Capacitor</strong>, published on both Android and iOS. It follows <strong>Clean Architecture</strong> (Domain / Application / Infrastructure / Presentation) with <strong>NgRx</strong> for global state management (auth, pools, notifications, leaderboards, achievements, and chat).
                 <br /><br />
@@ -141,21 +156,6 @@ const AppShowcase = () => {
                 <br /><br />
                 Backend deployed on <strong>Railway</strong> following the same Clean Architecture principles.
               </p>
-              <div className="flex gap-2 mt-4 flex-wrap">
-                {quinielaImages.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image.src}
-                    alt={image.alt}
-                    className={`w-16 h-16 rounded-lg object-cover cursor-pointer transition-all duration-300 ${
-                      selectedQuinielaImage === index
-                        ? 'ring-2 ring-blue-500 scale-105'
-                        : 'opacity-70 hover:opacity-100 hover:scale-105'
-                    }`}
-                    onClick={() => setSelectedQuinielaImage(index)}
-                  />
-                ))}
-              </div>
             </div>
           </div>
 
